@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <h1 class="cc">Congratulations!</h1>
+    <div class="btns">
+        <button id="updateButton" onclick="showEditForm()">Change Your Datas</button>
+        <button id="deleteButton" onclick="deleteAccount()">Delete Account</button>
+    </div>
+
+
+    <div id="editFormContainer" style="display: none;" class="form">
+        <h2>Edit User Data</h2>
+        <div class="input-container ic1">
+            <input id="editedFirstName" class="input" type="text" placeholder="First name" />
+        </div>
+        <div class="input-container ic2">
+            <input id="editedLastName" class="input" type="text" placeholder="Last name" />
+        </div>
+        <div class="input-container ic2">
+            <input id="editedEmail" class="input" type="email" placeholder="Email" />
+        </div>
+        <div class="input-container ic2">
+            <input id="editedPassword" class="input" type="password" placeholder="Password" />
+        </div>
+
+        <button class="submit" onclick="editUser()">Save Changes</button>
+    </div>
+
+
+
+    <script src="sigin.js"></script>
+    <script src="login.js"></script>
+    
+</body>
+
+</html>
